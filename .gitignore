@@ -2,4 +2,4 @@
 /vendor/
 .env
 /composer.lock
-/db.json
+/test/db.json
