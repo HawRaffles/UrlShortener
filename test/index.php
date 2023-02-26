@@ -26,7 +26,3 @@ $code = $urlData->encode('https://php.net');
 echo $code . PHP_EOL;
 $url = $urlData->decode($code);
 echo $url . PHP_EOL;
-//$commandHandler = new CommandHandler(new TestCommand());
-//$commandHandler->addCommand(new InteractiveMode($urlData));
-//$commandHandler->addCommand(new UrlEncodeCommand($urlData));
-//$commandHandler->addCommand(new UrlDecodeCommand($urlData));
