@@ -16,7 +16,6 @@ $urlData = new ConvertUrl(
         [
             200 => true,
             301 => true,
-            302 => true,
             404 => true
         ],
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (HTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
