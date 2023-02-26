@@ -1,12 +1,11 @@
 <?php
 
-namespace Study\UrlCompressor\Actions;
+namespace Tars\UrlShortener\Actions;
 
 use InvalidArgumentException;
-use Study\Core\Helpers\SingletonLogger;
-use Study\UrlCompressor\Interfaces\ICheckUrl;
-use Study\UrlCompressor\Interfaces\IUrlDecoder;
-use Study\UrlCompressor\Interfaces\IUrlEncoder;
+use Tars\UrlShortener\Interfaces\ICheckUrl;
+use Tars\UrlShortener\Interfaces\IUrlDecoder;
+use Tars\UrlShortener\Interfaces\IUrlEncoder;
 
 class ConvertUrl implements IUrlEncoder, IUrlDecoder
 {
@@ -37,7 +36,6 @@ class ConvertUrl implements IUrlEncoder, IUrlDecoder
         $hash = md5($url);
         $key = substr($hash, 0, 6);
         $this->SaveData($url, $key);
-        SingletonLogger::info('Закодовано url ' . $url);
         return $key;
     }
 
@@ -45,7 +43,6 @@ class ConvertUrl implements IUrlEncoder, IUrlDecoder
     {
         if (!isset($this->encodeData[$code]))
             throw new InvalidArgumentException('Вказаний код ' . $code . ' URL-у відсутній в базі!');
-        SingletonLogger::info('Розкодовано url ' . $this->encodeData[$code]['url']);
         return $this->encodeData[$code]['url'];
     }
 

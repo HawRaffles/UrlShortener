@@ -1,6 +1,6 @@
 <?php
 
-namespace Study\UrlCompressor\Interfaces;
+namespace Tars\UrlShortener\Interfaces;
 
 use InvalidArgumentException;
 

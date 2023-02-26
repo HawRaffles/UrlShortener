@@ -1,26 +1,30 @@
 {
-    "name": "raffleshaw/study",
-    "type": "project",
-    "require": {
-        "monolog/monolog": "3.*",
-        "guzzlehttp/guzzle": "7.*",
-        "nesbot/carbon": "2.*",
-        "psr/container": "2.*",
-        "ext-readline": "*",
-        "ext-json": "*",
-        "ufo-cms/colored_cli": "^1.0",
-      "ext-pdo": "*"
-    },
+    "name": "raffles/url-shortener",
+    "description": "Url converter library to/from shortcode",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Study\\": "src/"
-        }
-    },
     "authors": [
         {
-            "name": "Andrii Dodon"
+            "name": "Raffles Haw",
+            "email": "haw.raffles@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "type" : "library",
+    "homepage": "https://github.com/HawRaffles/UrlShortener",
+    "require" : {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "7.*",
+        "nesbot/carbon": "2.*"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Tars\\UrlShortener\\": "src/"
+        }
+    },
+    "extra" : {
+    },
+    "scripts": {
+        "auto-scripts": {
+        }
+    }
 }

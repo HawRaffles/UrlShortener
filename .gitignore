@@ -2,5 +2,4 @@
 /vendor/
 .env
 /composer.lock
-
 /db.json

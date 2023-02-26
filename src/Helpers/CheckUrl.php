@@ -1,11 +1,11 @@
 <?php
 
-namespace Study\UrlCompressor\Helpers;
+namespace Tars\UrlShortener\Helpers;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use InvalidArgumentException;
-use Study\UrlCompressor\Interfaces\ICheckUrl;
+use Tars\UrlShortener\Interfaces\ICheckUrl;
 
 class CheckUrl implements ICheckUrl
 {
